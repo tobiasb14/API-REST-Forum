@@ -28,4 +28,5 @@ public class CursoRepositoryTest {
 		Curso curso = repository.findByNome("jpa");
 		assertNull(curso);
 	}
+	
 }

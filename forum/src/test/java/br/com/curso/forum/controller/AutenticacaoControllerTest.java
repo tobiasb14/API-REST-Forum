@@ -17,9 +17,10 @@ public class AutenticacaoControllerTest {
 	
 	@Autowired
 	private MockMvc mockMvc;
+	
 
 	@Test
-	public void deveriaDevolverBadRequestAutenticacaoIncorreta() throws Exception {
+	public void deveriaDevolver400AutenticacaoIncorreta() throws Exception {
 		
 		URI uri = new URI("/auth");
 		String json = "{\"email\":\"invalido@email.com\", \"senha\":\"123456}\"";
